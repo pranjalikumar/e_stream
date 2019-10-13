@@ -1,0 +1,26 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+.h1_index{
+  color:black;
+}
+.body_index{
+  display: flex;
+  height: 93vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../images/main_wall.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+.google{
+  display: flex;
+  flex-direction: column;
+  width:10vw;
+  height:80%;
+}

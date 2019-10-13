@@ -1,0 +1,18 @@
+.body {
+  display: flex;
+  height: 93vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color:black;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
+}
+.bordered-table{
+  display: flex;
+  flex-direction: column;
+  color:white;
+  width:40vw;
+  height:90%;
+}

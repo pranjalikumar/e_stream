@@ -14,16 +14,9 @@ import { browserHistory } from "react-router";
 import { orange500, blue500 } from "material-ui/styles/colors";
 import * as firebase from 'firebase';
 
-var config = {
-    apiKey: "AIzaSyAV7iQz5R9jSrZMKZEHZ5TPF0vFIm9oWCw",
-    authDomain: "estream-5a18e.firebaseapp.com",
-    databaseURL: "https://estream-5a18e.firebaseio.com",
-    storageBucket: "estream-5a18e.appspot.com"
-  };
-  firebase.initializeApp(config);
 
   // Get a reference to the database service
-  var database = firebase.database();
+var database = firebase.database();
 // Binding the state and actions. These will be available as props to component
 const styles = {
   underlineStyle: {
@@ -60,7 +53,7 @@ class Form extends Component {
     })
   }
   showSurvey=(e)=>{
-    browserHistory.push("/form");
+    browserHistory.push("/results");
   }
   submitForm = (e)=>{
 
