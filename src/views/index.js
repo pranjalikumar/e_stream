@@ -2,7 +2,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Actions } from "jumpstate";
-import * as FirebaseUtils from "../Services/Firebase";
 import firebase from "firebase";
 import * as firebaseui from 'firebaseui';
 import { browserHistory } from "react-router";
@@ -12,7 +11,6 @@ import "./scss/index.scss";
 class Index extends Component {
 constructor(props) {
   super(props);
-  FirebaseUtils.initializeFirebase();
   this.state = {
     value: ""
   };

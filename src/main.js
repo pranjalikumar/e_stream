@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import createStore from './store/createStore'
 import './styles/main.scss'
 import * as firebase from 'firebase';
-
+import * as FirebaseUtils from "./Services/Firebase";
 
 // Store Initialization
 // ------------------------------------
@@ -11,14 +11,7 @@ const store = createStore(window.__INITIAL_STATE__)
 
 // Render Setup
 // ------------------------------------
-
-var config = {
-    apiKey: "AIzaSyAV7iQz5R9jSrZMKZEHZ5TPF0vFIm9oWCw",
-    authDomain: "estream-5a18e.firebaseapp.com",
-    databaseURL: "https://estream-5a18e.firebaseio.com",
-    storageBucket: "estream-5a18e.appspot.com"
-  };
-firebase.initializeApp(config);
+FirebaseUtils.initializeFirebase();
 const MOUNT_NODE = document.getElementById('root')
 var injectTapEventPlugin = require("react-tap-event-plugin");
 injectTapEventPlugin();

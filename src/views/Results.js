@@ -23,10 +23,11 @@ class User extends Component{
       <TableRow >
         <TableRowColumn>{issues.name}</TableRowColumn>
         <TableRowColumn>{issues.phone}</TableRowColumn>
-        <TableRowColumn>{issues.comments}</TableRowColumn>
-        <TableRowColumn>{issues.reasons}</TableRowColumn>
         <TableRowColumn>{issues.trainingCourse}</TableRowColumn>
         <TableRowColumn>{issues.satisfaction}</TableRowColumn>
+        <TableRowColumn>{issues.reasons}</TableRowColumn>
+        <TableRowColumn>{issues.comments}</TableRowColumn>
+
       </TableRow>
     )
   }
@@ -74,9 +75,9 @@ class Results extends Component {
           <TableRow striped="true">
             <TableHeaderColumn tooltip="Full Name">Name</TableHeaderColumn>
             <TableHeaderColumn tooltip="Phone Number">Phone</TableHeaderColumn>
-            <TableHeaderColumn tooltip="Cours-Ug/Pg/Others">Training Course</TableHeaderColumn>
+            <TableHeaderColumn tooltip="Course-Ug/Pg/Others">Training Course</TableHeaderColumn>
             <TableHeaderColumn tooltip="Satisfaction Level">Satisfaction</TableHeaderColumn>
-            <TableHeaderColumn tooltip="Reason fro Attending Training">Reason</TableHeaderColumn>
+            <TableHeaderColumn tooltip="Reason for Attending Training">Reason</TableHeaderColumn>
             <TableHeaderColumn tooltip="Comments about Training">Comments</TableHeaderColumn>
           </TableRow>
         </TableHeader>
