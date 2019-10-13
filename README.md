@@ -25,7 +25,10 @@ For more information, see [https://docs.npmjs.com/downloading-and-installing-nod
 5. On clicking submit form, the data will be stored in FireBase.
 6. You will be able to see the results of the survey and do some analyzation on clicking the &#39;Show Survey Button&#39;.
 
+Screenshot: 
+![alt text][logo]
 
+[logo]: https://github.com/pranjalikumar/e_stream/blob/master/src/views/images/demo.png "Screenshot"
 
 **Running the tests**
 
