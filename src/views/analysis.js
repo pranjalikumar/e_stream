@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { Actions } from "jumpstate";
 // Binding the state and actions. These will be available as props to component
-class Index extends Component {
+class Analysis extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -10,7 +10,7 @@ class Index extends Component {
     };
   }
   render() {
-    return <div> {this.props.coach.readme} </div>;
+    return <div> Analysis </div>;
   }
 }
 const mapStateToProps = (state) => {
@@ -24,4 +24,4 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Index)
+export default connect(mapStateToProps, mapDispatchToProps)(Analysis)

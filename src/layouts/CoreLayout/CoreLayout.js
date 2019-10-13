@@ -8,7 +8,7 @@ export default class CoreLayout extends Component {
     let { children } = this.props;
     return (
       <MuiThemeProvider>
-        <div className="container-fluid core-layout">
+        <div className="core-layout">
           {children}
         </div>
       </MuiThemeProvider>
