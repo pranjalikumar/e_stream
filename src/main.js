@@ -10,7 +10,8 @@ const store = createStore(window.__INITIAL_STATE__)
 // Render Setup
 // ------------------------------------
 const MOUNT_NODE = document.getElementById('root')
-
+var injectTapEventPlugin = require("react-tap-event-plugin");
+injectTapEventPlugin();
 let render = () => {
   const App = require('./components/App').default
   const routes = require('./routes/index').default(store)

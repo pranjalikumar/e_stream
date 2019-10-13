@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
+  width: 100vw;
 }
 .body {
   display: flex;
@@ -9,13 +10,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: black
+  background-image: url("../images/qmark.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: left;
 }
 .form_outer{
   display: flex;
   flex-direction: column;
   width:40vw;
-  height:80vh;
+  height:90%;
+}
+h1{
+  color:white
 }
 .form_header{
   display: flex;
@@ -28,8 +35,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 10%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 3%;
+  padding-top: 2%;
   overflow: scroll;
   background-color: white
 }
